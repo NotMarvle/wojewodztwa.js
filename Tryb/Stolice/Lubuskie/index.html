@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <title>Lubuskie - Stolice</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Stolice wojewodztwa Lubuskie to...</h1>
+        </div>
+        <div id="inp">
+            1<input type="text" id="ans">
+            2<input type="text" name="ans" id="ans2">
+            <button onclick="submit()">Potwierdź</button>
+        </div>
+    </div>
+<script>
+    function submit() {
+        const ans1 = document.getElementById("ans").value;
+        const ans2 = document.getElementById("ans2").value;
+
+        if (ans1 === "Gorzów Wielkopolski" || ans == "gorzów wielkopolski", ans2 == "Zielona Góra" || ans2 == "zielona góra") {
+            location.href = "Dobrze";
+        }
+        else {
+            location.href = "Zle";
+        }
+    }
+</script>
+</body>
+</html>

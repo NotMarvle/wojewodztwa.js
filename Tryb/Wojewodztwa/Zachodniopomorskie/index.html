@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <title>Zachodniopomorskie - Województwa</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Województwo Zachodniopomorskie ma numer...</h1>
+            <div id="img">
+                <img src="/assets/polska.jpg" alt="polska" width="200" height="150">
+            </div>
+        </div>
+        <div id="inp">
+            <input type="text" id="ans">
+            <button onclick="submit()">Potwierdź</button>
+        </div>
+    </div>
+<script>
+    function submit() {
+        const ans = document.getElementById("ans").value;
+
+        if (ans === "14") {
+            location.href = "Dobrze";
+        }
+        else {
+            location.href = "Zle";
+        }
+    }
+</script>
+</body>
+</html>
